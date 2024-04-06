@@ -10,20 +10,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Foodie_Land"
+        android:theme="@style/Theme.AppCompat.DayNight"
         tools:targetApi="31">
         <activity
-            android:name=".fragment.OutForDeliveryActivity"
+            android:name=".fragment.HistoryFragment"
             android:exported="false" />
         <activity
-            android:name=".fragment.AllItemActivity"
+            android:name=".fragment.SearchFragment"
             android:exported="false" />
         <activity
-            android:name=".fragment.AddItemActivity"
+            android:name=".fragment.CartFragment"
             android:exported="false" />
         <activity
-            android:name=".fragment.AdminMainActivity"
+            android:name=".fragment.ProfileFragment"
             android:exported="false" />
+        <activity
+            android:name=".fragment.HomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.MenuBootomSheetFragment"
+            android:exported="false" />
+
         <activity
             android:name=".SplashScreen"
             android:exported="true">
@@ -34,22 +41,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ChooseYourRole"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.AdminLoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".admin.AdminSignUpActivity"
-            android:exported="false" />
-        <activity
             android:name=".PayOutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChooseLocationActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
@@ -58,9 +56,11 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustPan" />
+            android:name=".CongratsBottomSheet"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationBottomFragment"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

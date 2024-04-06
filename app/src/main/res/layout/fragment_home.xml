@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/edittextshape"
+    android:background="@color/white"
     tools:context=".fragment.HomeFragment">
 
     <androidx.cardview.widget.CardView
@@ -68,7 +68,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/aclonica"
-        android:text="Popular"
+        android:text="@string/popular"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,14 +77,14 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/viewAllMenu"
         android:layout_width="120dp"
-        android:layout_height="25dp"
+        android:layout_height="28dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/textColor"
         android:elevation="8dp"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
-        android:text="View Menu"
+        android:text="@string/view_car"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"

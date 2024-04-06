@@ -1,11 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Foodie_Land" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Rentit" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">#ACC18A</item>
         <item name="colorPrimaryVariant">#ACC18A</item>
         <item name="android:statusBarColor">#ACC18A</item>
     </style>
 
-    <style name="Theme.Foodie_Land" parent="Base.Theme.Foodie_Land" />
+    <style name="Theme.Foodie_Land" parent="Base.Theme.Rentit" />
 </resources>

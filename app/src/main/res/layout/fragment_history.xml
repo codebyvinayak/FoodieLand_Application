@@ -19,7 +19,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/aclonica"
-            android:text="Recent Buy"
+            android:text="@string/recent_rent"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/buyAgainFoodImage"
+                    android:id="@+id/rentAgainVehicleImage"
                     android:layout_width="62dp"
                     android:layout_height="62dp"
                     android:layout_marginStart="8dp"
@@ -54,40 +54,59 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/buyAgainFoodName"
+                    android:id="@+id/rentAgainVehicleName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/aclonica"
-                    android:text="FoodName"
-                    android:textSize="16sp"
+                    android:text="Vechicle Name"
                     android:textColor="@color/black"
-                    app:layout_constraintBottom_toTopOf="@+id/buyAgainFoodPrice"
-                    app:layout_constraintStart_toEndOf="@+id/buyAgainFoodImage"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/rentAgainVehiclePrice"
+                    app:layout_constraintStart_toEndOf="@+id/rentAgainVehicleImage"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/buyAgainFoodPrice"
+                    android:id="@+id/rentAgainVehiclePrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="serif"
-                    android:text="$5"
+                    android:text="400"
                     android:textColor="@color/textColor"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/buyAgainFoodName"
-                    app:layout_constraintTop_toBottomOf="@+id/buyAgainFoodName" />
+                    app:layout_constraintStart_toStartOf="@+id/rentAgainVehicleName"
+                    app:layout_constraintTop_toBottomOf="@+id/rentAgainVehicleName" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/orderedStatus"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginEnd="32dp"
+                    android:layout_marginEnd="36dp"
                     app:cardBackgroundColor="#00C853"
                     app:cardCornerRadius="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.266" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/receivedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/greenbuttonshape"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/received"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/orderedStatus"
+                    app:layout_constraintStart_toStartOf="@+id/orderedStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/orderedStatus">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
@@ -106,7 +125,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/BuyAgainRecyclerView"
+            android:id="@+id/RentAgainRecyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
@@ -116,7 +135,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView14"
             app:layout_constraintVertical_bias="0.0"
-            tools:listitem="@layout/buy_again_item" />
+            tools:listitem="@layout/rent_again_item" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

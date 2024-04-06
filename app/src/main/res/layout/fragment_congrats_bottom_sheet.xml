@@ -20,7 +20,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/aclonica"
-            android:text="Congrats \n Your Order Placed"
+            android:text="Your Vehicle Successfully Booked"
             android:textAlignment="center"
             android:textColor="@color/textColor"
             android:textSize="24sp" />

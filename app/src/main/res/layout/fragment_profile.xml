@@ -174,7 +174,7 @@
         android:background="@drawable/proceedbutonshape"
         android:elevation="5dp"
         android:fontFamily="@font/aclonica"
-        android:text="Save Information"
+        android:text="@string/save_information"
         android:textAllCaps="false"
         android:textColor="@color/textColor"
         android:textSize="20sp" />

@@ -20,12 +20,12 @@
         app:srcCompat="@drawable/arrow_left" />
 
     <TextView
-        android:id="@+id/detailFoodName"
+        android:id="@+id/detailVehicleName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/aclonica"
-        android:text="Food Name"
+        android:text="Vehicle Name"
         android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,69 +42,69 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailFoodName">
+        app:layout_constraintTop_toBottomOf="@+id/detailVehicleName">
 
         <ImageView
-            android:id="@+id/DetailFoodImage"
+            android:id="@+id/detailVehicleImage"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@tools:sample/backgrounds/scenic"/>
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/textView245"
+        android:id="@+id/detailDescriptionHead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/aclonica"
-        android:text="Short Description"
+        android:text="@string/short_description"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView4" />
 
     <TextView
-        android:id="@+id/DescriptionTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/detailDescription"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:autoSizeTextType="none"
         android:inputType="text"
-        android:text="Our burgers are not just a meal; they are a visual masterpiece. We construct them to stand tall, \n a testament to our commitment to perfection."
+        android:text="@string/the_vehicle_is_a_sleek_and_efficient_electric_car_designed_for_urban_commuting_boasting_cutting_edge_technology_and_sustainable_performance"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView245"
-        app:layout_constraintTop_toBottomOf="@+id/textView245" />
+        app:layout_constraintStart_toStartOf="@+id/detailDescriptionHead"
+        app:layout_constraintTop_toBottomOf="@+id/detailDescriptionHead" />
 
     <TextView
-        android:id="@+id/IngredientTextView"
+        android:id="@+id/ingredientTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/aclonica"
-        android:text="Ingredients"
+        android:text="@string/features"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/DescriptionTextView"
+        app:layout_constraintEnd_toEndOf="@+id/detailDescription"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/DescriptionTextView"
-        app:layout_constraintTop_toBottomOf="@+id/DescriptionTextView" />
+        app:layout_constraintStart_toStartOf="@+id/detailDescription"
+        app:layout_constraintTop_toBottomOf="@+id/detailDescription" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/detailTypes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/IngredientTextView"
-        app:layout_constraintTop_toBottomOf="@+id/IngredientTextView" />
+        app:layout_constraintStart_toStartOf="@+id/ingredientTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientTextView" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/cartButton"
+        android:id="@+id/addItemButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -112,11 +112,11 @@
         android:layout_marginEnd="8dp"
         android:background="@color/white"
         android:fontFamily="@font/aclonica"
-        android:text="Add To Cart"
+        android:text="Booking"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/detailTypes"
         app:srcCompat="@drawable/addtocartshape" />
 </androidx.constraintlayout.widget.ConstraintLayout>
